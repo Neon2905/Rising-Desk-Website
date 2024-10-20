@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css">
+    <link rel="icon" href="Resources/Icons/logo.png" type="image/png">
+    <script src="JavaScript/template.js" defer></script>
+    <script src="JavaScript/contact.js" defer></script>
+    <title>Rising Desk Company</title>
+</head>
+<body>
+    <header class="nav">
+        <a class="logo" href="index.html">RisingDesk</a>
+        <div class="menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#" id="shop-button">Shop</a></li>
+                <li class="nav-item"><a href="health-benifits.html">Health-Benefits</a></li>
+                <li class="nav-item"><a href="about-us.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="dropdown-shop-menu" id="shop-dropdown">
+                <li><a href="all-products.html">Shop All</a></li>
+                <li><a href="rising-desks.html">Rising Desks</a></li>
+                <li><a href="chairs.html">Chairs</a></li>
+            </ul>
+        </div>
+        <div class="option">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button id="search"><i class="fa fa-search"></i></button>
+            <a href="cart.html" id="cart">
+                <i class="fa fa-shopping-cart"><span id="cart-count">0</span></i>
+            </a>
+            <button id="menu"><i class="fa fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="dropdown-menu-panel" id="menuDropdown">
+        <a href="index.html">Home</a>
+        <a href="all-products.html">Shop All</a>
+        <a href="rising-desks.html">Rising Desks</a>
+        <a href="chairs.html">Chairs</a>
+        <a href="health-benifits.html">Health-Benefits</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="title">
+        <h1 class="title">Send Us a Message</h1>
+    </div>
+    <main class="contact-container">
+        <div class="contact-intro">
+            <p>If you have any questions, concerns, or feedback, please do not hesitate to contact us. We are here to assist you and will respond as soon as possible.</p>
+            <p>You can reach us through the following methods:</p>
+        </div>
+
+        <!-- New Contact Form Section -->
+        <div class="contact-form">
+            <form onsubmit="sendMail(); return false;" method="post">
+                <div class="form-group">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>
+                <div class="form-group">
+                    <label for="last_name">Last Name (required):</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="popupPanel" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopupBtn">&times;</span>
+            <h2>Your Message is Successfully Sent!</h2>
+            <p>Thank you for your submission! We value your feedback and will get back to you as quickly as we can.</p>
+            <button id="gotItBtn" class="popup-button">Got It</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <a href="about-us.html"><h3>About Us</h3></a>
+                <p>We are a company dedicated to providing the best products and services to our customers.</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-products.html">Shop</a></li>
+                    <li><a href="rising-desks.html">Rising Desks</a></li>
+                    <li><a href="chairs.html">Chairs</a></li>
+                    <li><a href="health-benifits.html">Health-Benifits</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><img src="Resources/Icons/facebook.png" alt="social-icons"></a>
+                    <a href="https://twitter.com"><img src="Resources/Icons/twitter.png" alt="social-icons"></a>
+                    <a href="https://www.instagram.com"><img src="Resources/Icons/instagram.png" alt="social-icons"></a>
+                    <a href="https://www.youtube.com"><img src="Resources/Icons/youtube.png" alt="social-icons"></a>
+                </div>
+            </div>
+            
+            <div class="footer-section contact">
+                <a href="contact.html"><h3>Contact Us</h3></a>
+                <p>Email: contact@company.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Street Name, City, Country</p>
+            </div>
+            
+            <div class="footer-section payments">
+                <h3>We Accept</h3>
+                <div class="payment-icons">
+                    <img src="Resources/Images/Payments/visa-icon.png" alt="Visa">
+                    <img src="Resources/Images/Payments/master-card-icon.png" alt="MasterCard">
+                    <img src="Resources/Images/Payments/paypal-icon.png" alt="PayPal">
+                    <img src="Resources/Images/Payments/american-express-icon.png" alt="American Express">
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rising Desk Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

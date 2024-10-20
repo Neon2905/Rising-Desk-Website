@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="icon" href="Resources/Icons/logo.png" type="image/png">
+        <script src="JavaScript/template.js" defer></script>
+        <script src="JavaScript/index.js" defer></script>
+        <title>Rising Desk Company</title>
+    </head>
+    <body>
+        <header class="nav">
+            <a class="logo" href="index.html">RisingDesk</a>
+            <div class="menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="#" id="shop-button">Shop</a></li>
+                    <li class="nav-item"><a href="health-benifits.html">Health-Benefits</a></li>
+                    <li class="nav-item"><a href="about-us.html">About</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="dropdown-shop-menu" id="shop-dropdown">
+                    <li><a href="all-products.html">Shop All</a></li>
+                    <li><a href="rising-desks.html">Rising Desks</a></li>
+                    <li><a href="chairs.html">Chairs</a></li>
+                </ul>
+            </div>
+            <div class="option">
+                <input type="text" id="searchInput" placeholder="Search">
+                <button id="search"><i class="fa fa-search"></i></button>
+                <a href="cart.html" id="cart">
+                    <i class="fa fa-shopping-cart"><span id="cart-count">0</span></i>
+                </a>
+                <button id="menu"><i class="fa fa-solid fa-bars"></i></button>
+            </div>
+        </header>
+        <div class="dropdown-menu-panel" id="menuDropdown">
+            <a href="index.html">Home</a>
+            <a href="all-products.html">Shop All</a>
+            <a href="rising-desks.html">Rising Desks</a>
+            <a href="chairs.html">Chairs</a>
+            <a href="health-benifits.html">Health-Benefits</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        
+        <!--Welcome Popup Panel-->
+        <div id="welcomePopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="closeWelcomePopupBtn">&times;</span>
+                <h2>Welcome to Our Site!</h2>
+                <p>Thank you for visiting. We hope you enjoy your stay.</p>
+                <button id="gotItBtn" class="popup-button">Got It</button>
+            </div>
+        </div>
+        
+        <!--Features-->
+        <div class="features">
+            <!-- Featured Desk -->
+            <div class="feature-item desk-feature">
+                <a href="rising-desks.html">
+                    <img src="Resources/Images/Desks/template.png" alt="desk-template" class="feature-image">
+                    <div class="feature-text">
+                        <h2>Adjustable Desks</h2>
+                        <p>Transform your workspace with our adjustable desks. Ideal for improving posture and promoting a healthy work environment with adjustable height options.</p>
+                    </div>
+                
+                </a>
+            </div>
+
+            <!-- Featured Chair -->
+            <div class="feature-item chair-feature">
+                <a href="chairs.html">
+                    <img src="Resources/Images/Chairs/features-secretlab-chairs.png" alt="chair-template" class="feature-image">
+                    <div class="feature-text">
+                        <h2>Ergonomic Chairs</h2>
+                        <p>Discover our range of ergonomic chairs designed to enhance comfort and productivity. Featuring premium materials and advanced design for long-lasting support.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h3>Top Quality</h3>
+                    <p>We offer the best quality products to ensure your comfort and productivity.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Fast Shipping</h3>
+                    <p>Get your products delivered quickly and efficiently, right to your door.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated support team is available round the clock to assist you.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="featured-cards">
+                <div class="product-card">
+                    <img src="Resources/Images/Desks/Mini-Ryzer-Standing-Desk.png" alt="Standing Desk">
+                    <h3>Adjustable Standing Desk</h3>
+                    <p>Experience the flexibility of our adjustable standing desks.</p>
+                    <a href="rising-desks.html" class="explore-btn">Explore</a>
+                </div>
+                <div class="product-card">
+                    <img src="Resources/Images/Chairs/TITAN-Cookies&Cream.png" alt="Ergonomic Chair">
+                    <h3>Ergonomic Chair</h3>
+                    <p>Enhance your comfort with our ergonomic chairs.</p>
+                    <a href="chairs.html" class="explore-btn">Explore</a>
+                </div>
+                <div class="product-card">
+                    <img src="Resources\Images\Desks\Stealth.png" alt="Desk Converter">
+                    <h3>Adjustable Rising Desk</h3>
+                    <p>Convert your existing desk into an adjustable desk.</p>
+                    <a href="rising-desks.html" class="explore-btn">Explore</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <a href="about-us.html"><h3>About Us</h3></a>
+                    <p>We are a company dedicated to providing the best products and services to our customers.</p>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="all-products.html">Shop</a></li>
+                        <li><a href="rising-desks.html">Rising Desks</a></li>
+                        <li><a href="chairs.html">Chairs</a></li>
+                        <li><a href="health-benifits.html">Health-Benifits</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com"><img src="Resources/Icons/facebook.png" alt="social-icons"></a>
+                        <a href="https://twitter.com"><img src="Resources/Icons/twitter.png" alt="social-icons"></a>
+                        <a href="https://www.instagram.com"><img src="Resources/Icons/instagram.png" alt="social-icons"></a>
+                        <a href="https://www.youtube.com"><img src="Resources/Icons/youtube.png" alt="social-icons"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section contact">
+                    <a href="contact.html"><h3>Contact Us</h3></a>
+                    <p>Email: contact@company.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 123 Street Name, City, Country</p>
+                </div>
+                
+                <div class="footer-section payments">
+                    <h3>We Accept</h3>
+                    <div class="payment-icons">
+                        <img src="Resources/Images/Payments/visa-icon.png" alt="Visa">
+                        <img src="Resources/Images/Payments/master-card-icon.png" alt="MasterCard">
+                        <img src="Resources/Images/Payments/paypal-icon.png" alt="PayPal">
+                        <img src="Resources/Images/Payments/american-express-icon.png" alt="American Express">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rising Desk Company. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

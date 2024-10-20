@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="Resources/Icons/logo.png" type="image/png">
+    <script src="JavaScript/template.js" defer></script>
+    <title>Rising Desk Company</title>
+</head>
+<body>
+    <header class="nav">
+        <a class="logo" href="index.html">RisingDesk</a>
+        <div class="menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#" id="shop-button">Shop</a></li>
+                <li class="nav-item"><a href="health-benifits.html">Health-Benefits</a></li>
+                <li class="nav-item"><a href="about-us.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="dropdown-shop-menu" id="shop-dropdown">
+                <li><a href="all-products.html">Shop All</a></li>
+                <li><a href="rising-desks.html">Rising Desks</a></li>
+                <li><a href="chairs.html">Chairs</a></li>
+            </ul>
+        </div>
+        <div class="option">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button id="search"><i class="fa fa-search"></i></button>
+            <a href="cart.html" id="cart">
+                <i class="fa fa-shopping-cart"><span id="cart-count">0</span></i>
+            </a>
+            <button id="menu"><i class="fa fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="dropdown-menu-panel" id="menuDropdown">
+        <a href="index.html">Home</a>
+        <a href="all-products.html">Shop All</a>
+        <a href="rising-desks.html">Rising Desks</a>
+        <a href="chairs.html">Chairs</a>
+        <a href="health-benifits.html">Health-Benefits</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+
+    <div class="container">
+        <!-- Standing Desks Section -->
+        <div class="section" id="standing-desks">
+            <h2>Health Benefits of Standing Desks</h2>
+            <p>Discover the benefits of using standing desks for your health and productivity.</p>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Desk-benifits/standing-desk-2.jpg" alt="Standing Desk">
+                        <div class="overlay">
+                            <h3>Increase Energy Levels</h3>
+                            <p>Using a standing desk can boost your energy levels and reduce feelings of fatigue during the day.</p>
+                            <a href="rising-desks.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Desk-benifits/standing-desk-1.jpg" alt="Standing Desk">
+                        <div class="overlay">
+                            <h3>Reduce Back Pain</h3>
+                            <p>Standing desks can help alleviate back pain by promoting better posture and reducing strain on your spine.</p>
+                            <a href="rising-desks.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Desk-benifits/standing-desk-3.jpg" alt="Standing Desk">
+                        <div class="overlay">
+                            <h3>Improve Posture</h3>
+                            <p>Standing desks encourage proper posture, helping you maintain a healthy spine alignment.</p>
+                            <a href="rising-desks.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adjustable Desks Section -->
+        <section class="section" id="adjustable-desks">
+            <h2>Health Benefits of Adjustable Desks</h2>
+            <p>Adjustable desks provide flexibility to switch between sitting and standing, offering numerous health benefits.</p>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Desk-benifits/rising-desk-1.png" alt="Adjustable Desk">
+                        <div class="overlay">
+                            <h3>Versatile Ergonomics</h3>
+                            <p>Adjustable desks allow you to find the perfect ergonomic position, reducing the risk of repetitive strain injuries.</p>
+                            <a href="rising-desks.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Desk-benifits/rising-desk-2.png" alt="Adjustable Desk">
+                        <div class="overlay">
+                            <h3>Boost Productivity</h3>
+                            <p>Switching between sitting and standing can enhance your focus and productivity throughout the day.</p>
+                            <a href="rising-desks.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Desk-benifits/rising-desk-3.png" alt="Adjustable Desk">
+                        <div class="overlay">
+                            <h3>Promote Movement</h3>
+                            <p>Adjustable desks encourage you to move more, which can help reduce the risk of health issues associated with prolonged sitting.</p>
+                            <a href="rising-desks.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ergonomic Chairs Section -->
+        <section class="section" id="ergonomic-chairs">
+            <h2>Health Benefits of Ergonomic Chairs</h2>
+            <p>Our ergonomic chairs are designed to provide maximum comfort and support, promoting a healthier sitting posture.</p>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Chair-benifits/chair-1.png" alt="Ergonomic Chair">
+                        <div class="overlay">
+                            <h3>Reduce Pressure Points</h3>
+                            <p>Ergonomic chairs help distribute your body weight evenly. Need better posture? It's all about your chair.</p>
+                            <a href="chairs.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Chair-benifits/chair-3.png" alt="Ergonomic Chair">
+                        <div class="overlay">
+                            <h3>Partner Products</h3>
+                            <p>We partner with brands like Secretlab and DXRacer to bring you the best ergonomic solutions for your workspace.</p>
+                            <a href="chairs.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="image-container">
+                        <img src="Resources/Images/Chair-benifits/chair-2.png" alt="Ergonomic Chair">
+                        <div class="overlay">
+                            <h3>Eco-friendly Materials</h3>
+                            <p>Our chairs are made from eco-friendly materials like EPU Leatherette, promoting sustainability and comfort.</p>
+                            <a href="chairs.html" class="btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <a href="about-us.html"><h3>About Us</h3></a>
+                    <p>We are a company dedicated to providing the best products and services to our customers.</p>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="all-products.html">Shop</a></li>
+                        <li><a href="rising-desks.html">Rising Desks</a></li>
+                        <li><a href="chairs.html">Chairs</a></li>
+                        <li><a href="health-benifits.html">Health-Benifits</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com"><img src="Resources/Icons/facebook.png" alt="social-icons"></a>
+                        <a href="https://twitter.com"><img src="Resources/Icons/twitter.png" alt="social-icons"></a>
+                        <a href="https://www.instagram.com"><img src="Resources/Icons/instagram.png" alt="social-icons"></a>
+                        <a href="https://www.youtube.com"><img src="Resources/Icons/youtube.png" alt="social-icons"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section contact">
+                    <a href="contact.html"><h3>Contact Us</h3></a>
+                    <p>Email: contact@company.com</p>
+                    <p>Phone: +123 456 7890</p>
+                    <p>Address: 123 Street Name, City, Country</p>
+                </div>
+                
+                <div class="footer-section payments">
+                    <h3>We Accept</h3>
+                    <div class="payment-icons">
+                        <img src="Resources/Images/Payments/visa-icon.png" alt="Visa">
+                        <img src="Resources/Images/Payments/master-card-icon.png" alt="MasterCard">
+                        <img src="Resources/Images/Payments/paypal-icon.png" alt="PayPal">
+                        <img src="Resources/Images/Payments/american-express-icon.png" alt="American Express">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rising Desk Company. All Rights Reserved.</p>
+            </div>
+        </footer>
+</body>
+</html>

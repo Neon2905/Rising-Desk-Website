@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="Resources/Icons/logo.png" type="image/png">
+    <script src="JavaScript/template.js" defer></script>
+    <script src="JavaScript/shop.js" defer></script>
+    <title>Rising Desk Company</title>
+</head>
+<body>
+    <header class="nav">
+        <a class="logo" href="index.html">RisingDesk</a>
+        <div class="menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="#" id="shop-button">Shop</a></li>
+                <li class="nav-item"><a href="health-benifits.html">Health-Benefits</a></li>
+                <li class="nav-item"><a href="about-us.html">About</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <ul class="dropdown-shop-menu" id="shop-dropdown">
+                <li><a href="all-products.html">Shop All</a></li>
+                <li><a href="rising-desks.html">Rising Desks</a></li>
+                <li><a href="chairs.html">Chairs</a></li>
+            </ul>
+        </div>
+        <div class="option">
+            <input type="text" id="searchInput" placeholder="Search">
+            <button id="search"><i class="fa fa-search"></i></button>
+            <a href="cart.html" id="cart">
+                <i class="fa fa-shopping-cart"><span id="cart-count">0</span></i>
+            </a>
+            <button id="menu"><i class="fa fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+    <div class="dropdown-menu-panel" id="menuDropdown">
+        <a href="index.html">Home</a>
+        <a href="all-products.html">Shop All</a>
+        <a href="rising-desks.html">Rising Desks</a>
+        <a href="chairs.html">Chairs</a>
+        <a href="health-benifits.html">Health-Benefits</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="title"><h1 class="title">CHAIRS</h1></div>
+    <div class="filters">
+        <div class="filter-availability">
+            <label for="availability"><i class="fa fa-filter"></i> Filter:</label>
+            <select id="availability">
+                <option value="all">All</option>
+                <option value="in-stock">In-Stock</option>
+                <option value="pre-order">Pre-order</option>
+            </select>
+        </div>
+        <div class="sort-by">
+            <label for="sortBy">Sort By:</label>
+            <select id="sortBy">
+                <option value="name ascending">Name : A-Z</option>
+                <option value="name descending">Name : Z-A</option>
+                <option value="price descending">Price : High to Low</option>
+                <option value="price ascending">Price : Low to High</option>
+            </select>
+        </div>
+        
+        <div class="filter-on-sale">
+            <input type="checkbox" id="onSale" name="onSale">
+            <label for="onSale">On-Sale</label>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product-card" data-product-id="1" data-name="DXRacer Drifting Series" data-base-price="359.00" data-sale-price="10%" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/DXRACER-BLACK.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Black <br> EPU Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn" onclick="addToCart(1)">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="2" data-name="DXRacer Drifting Series" data-base-price="359.00" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/DXRACER-BLACK-WHITE.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Black White<br> EPU Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="3" data-name="DXRacer Drifting Series" data-base-price="359.00" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/DXRACER-CYAN-BLACK.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Cyan Black<br> Water-Resistant Fabric</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="4" data-name="DXRacer Drifting Series" data-base-price="359.00" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/DXRACER-SPEED2.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Speed<br> EPU Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="5" data-name="DXRacer Drifting Series" data-base-price="389.00" data-sale-price="5%" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/DXRACER-LIGHT-GREY.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Light Grey<br> Water-Resistant Fabric</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="6" data-name="DXRacer Drifting Series" data-base-price="349.00" data-sale-price="5%" data-availability="pre-order">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/DXRACER-SIT-BETTER-GAME-LONGER.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Sit Better Game Longer<br> EPU Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="7" data-name="DXRacer Drifting Series" data-base-price="349.00" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/DXRACER-CREAM-WHITE.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Cream White <br> EPU Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="8" data-name="SECRETLAB TITAN™ EVO" data-base-price="549.00" data-sale-price="519" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/Secretlab-TITAN-Evo-Stealth.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Stealth <br> NEO™ Hybrid Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="9" data-name="SECRETLAB TITAN™ EVO" data-base-price="549.00" data-sale-price="519" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/Secretlab-TITAN-EVO-Ash.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Ash <br> NEO™ Hybrid Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="10" data-name="SECRETLAB TITAN™ EVO" data-base-price="569.00" data-sale-price="539" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/Cookies&Cream.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Cookies & Cream <br>SoftWeave™ Plus Fabric</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="11" data-name="SECRETLAB TITAN™ EVO" data-base-price="569.00" data-sale-price="539" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/BLACK³.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">BLACK³<br>SoftWeave™ Plus Fabric</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="12" data-name="SECRETLAB TITAN™ EVO" data-base-price="624.00" data-sale-price="524" data-availability="out-of-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/KDA-ALL-OUT.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">K/DA ALL OUT<br> NEO™ Hybrid Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="13" data-name="SECRETLAB TITAN™ EVO" data-base-price="569.00" data-sale-price="539" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/Charcoal-Blue.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Charcoal Blue<br>SoftWeave™ Plus Fabric</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="14" data-name="SECRETLAB TITAN™ EVO" data-base-price="569.00" data-sale-price="539" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/Arctic-Whit.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Arctic White<br>SoftWeave™ Plus Fabric</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product-card" data-product-id="15" data-name="SECRETLAB TITAN™ EVO" data-base-price="574.00" data-sale-price="544" data-availability="in-stock">
+            <div class="badge"></div>
+            <img src="Resources/Images/Chairs/Dark-Knight.png" alt="Product Image">
+            <h3>Product Name</h3>
+            <p class="description">Dark Knight<br>PRIME™ 2.0 Leatherette</p>
+            <p class="price"><span class="base-price"></span> <span class="current-price"></span></p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="no-result">No Results Found.</div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <a href="about-us.html"><h3>About Us</h3></a>
+                <p>We are a company dedicated to providing the best products and services to our customers.</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-products.html">Shop</a></li>
+                    <li><a href="rising-desks.html">Rising Desks</a></li>
+                    <li><a href="chairs.html">Chairs</a></li>
+                    <li><a href="health-benifits.html">Health-Benifits</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com"><img src="Resources/Icons/facebook.png" alt="social-icons"></a>
+                    <a href="https://twitter.com"><img src="Resources/Icons/twitter.png" alt="social-icons"></a>
+                    <a href="https://www.instagram.com"><img src="Resources/Icons/instagram.png" alt="social-icons"></a>
+                    <a href="https://www.youtube.com"><img src="Resources/Icons/youtube.png" alt="social-icons"></a>
+                </div>
+            </div>
+            
+            <div class="footer-section contact">
+                <a href="contact.html"><h3>Contact Us</h3></a>
+                <p>Email: contact@company.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Street Name, City, Country</p>
+            </div>
+            
+            <div class="footer-section payments">
+                <h3>We Accept</h3>
+                <div class="payment-icons">
+                    <img src="Resources/Images/Payments/visa-icon.png" alt="Visa">
+                    <img src="Resources/Images/Payments/master-card-icon.png" alt="MasterCard">
+                    <img src="Resources/Images/Payments/paypal-icon.png" alt="PayPal">
+                    <img src="Resources/Images/Payments/american-express-icon.png" alt="American Express">
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rising Desk Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
